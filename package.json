@@ -1,0 +1,46 @@
+{
+  "name": "@askwithai/skills",
+  "version": "0.1.0",
+  "description": "Agent skills for AskWithAI, the Decision Runtime Platform: one source for npx skills add, the docs site, and every app built on AskWithAI.",
+  "license": "MIT",
+  "type": "module",
+  "homepage": "https://github.com/AskWithAI/skills",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AskWithAI/skills.git"
+  },
+  "keywords": [
+    "askwithai",
+    "agent-skills",
+    "skills",
+    "claude-code",
+    "codex",
+    "cursor"
+  ],
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    },
+    "./skills/*": "./skills/*",
+    "./package.json": "./package.json"
+  },
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "skills",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "validate": "node scripts/validate.mjs",
+    "test": "node --test",
+    "check": "node scripts/validate.mjs && node --test",
+    "sync:docs": "node scripts/sync-docs.mjs"
+  }
+}
