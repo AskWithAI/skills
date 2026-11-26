@@ -7,7 +7,7 @@
   "homepage": "https://github.com/AskWithAI/skills",
   "repository": {
     "type": "git",
-    "url": "https://github.com/AskWithAI/skills.git"
+    "url": "git+https://github.com/AskWithAI/skills.git"
   },
   "keywords": [
     "askwithai",
